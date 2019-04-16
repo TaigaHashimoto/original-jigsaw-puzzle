@@ -1,0 +1,6 @@
+framework module PuzzleMaker {
+  umbrella header "PuzzleMaker-umbrella.h"
+
+  export *
+  module * { export * }
+}

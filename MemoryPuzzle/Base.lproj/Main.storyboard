@@ -1,24 +1,429 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="TanukiMagic.ttf">
+            <string>Tanuki-Permanent-Marker</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MemoryPuzzle" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.75" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sjO-L6-ekK">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qyh-Pm-Uqb" customClass="CustomButton" customModule="MemoryPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="41.333333333333343" y="202.33333333333334" width="331.33333333333326" height="331.33333333333326"/>
+                                <color key="backgroundColor" red="0.19475643719999999" green="0.68622789230000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="qyh-Pm-Uqb" secondAttribute="height" multiplier="1:1" id="BWA-bG-5Uw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Tanuki-Permanent-Marker" family="Tanuki Permanent Marker" pointSize="50"/>
+                                <state key="normal" title="オリジグる">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="NewGame" destination="BYZ-38-t0r" eventType="touchUpInside" id="cqt-8j-O6x"/>
+                                    <segue destination="IdA-l1-lWt" kind="presentation" identifier="toViewController2" id="PZl-qD-SBf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qcW-Ss-jCM" customClass="CustomButton" customModule="MemoryPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="251.66666666666666" y="572" width="124.33333333333334" height="115"/>
+                                <state key="normal" title="Button" image="colorPicker.png"/>
+                                <connections>
+                                    <action selector="colorPickerButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AuX-9i-74U"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="sjO-L6-ekK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1Ej-uA-l4F"/>
+                            <constraint firstItem="sjO-L6-ekK" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="9Ag-cd-DuD"/>
+                            <constraint firstItem="qyh-Pm-Uqb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RKD-tq-xgE"/>
+                            <constraint firstItem="sjO-L6-ekK" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Y3x-Lu-r66"/>
+                            <constraint firstAttribute="bottom" secondItem="sjO-L6-ekK" secondAttribute="bottom" id="a2k-6h-w97"/>
+                            <constraint firstItem="qyh-Pm-Uqb" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="bOq-CC-nSS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qcW-Ss-jCM" secondAttribute="trailing" constant="38" id="guk-AB-VvA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qcW-Ss-jCM" secondAttribute="bottom" constant="49" id="jhq-IN-u0f"/>
+                            <constraint firstItem="qcW-Ss-jCM" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" symbolic="YES" id="pFQ-BE-arB"/>
+                            <constraint firstItem="qyh-Pm-Uqb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="wIW-az-fml"/>
+                            <constraint firstItem="qcW-Ss-jCM" firstAttribute="top" secondItem="qyh-Pm-Uqb" secondAttribute="bottom" constant="38.5" id="xff-3I-9eb"/>
+                            <constraint firstItem="qcW-Ss-jCM" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.3" id="zKf-wM-47t"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="NewGameButton" destination="qyh-Pm-Uqb" id="1py-9h-LSz"/>
+                        <outlet property="titleImage" destination="sjO-L6-ekK" id="Eoy-lz-OVw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-195.6521739130435" y="124.55357142857142"/>
+        </scene>
+        <!--View Controller2-->
+        <scene sceneID="cN9-3F-NGs">
+            <objects>
+                <viewController id="IdA-l1-lWt" customClass="ViewController2" customModule="MemoryPuzzle" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3u6-Tr-EIb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1K2-KD-hNt">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t5C-Sh-fl3" customClass="CustomButton" customModule="MemoryPuzzle" customModuleProvider="target">
+                                        <rect key="frame" x="229.99999999999997" y="510" width="103.66666666666666" height="113"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="check.png">
+                                            <color key="titleColor" red="1" green="1" blue="0.0017020089290000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="finishPicture:" destination="IdA-l1-lWt" eventType="touchUpInside" id="Tlc-VL-Miq"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D7g-7t-Iia" customClass="CustomButton" customModule="MemoryPuzzle" customModuleProvider="target" colorLabel="IBBuiltInLabel-Blue">
+                                        <rect key="frame" x="81" y="515" width="103.66666666666669" height="113"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="imageAdd.png">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="ChoosePicture:" destination="IdA-l1-lWt" eventType="touchUpInside" id="l74-ZU-yZG"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qAg-Z5-fyb">
+                                        <rect key="frame" x="41.333333333333343" y="127.33333333333334" width="331.33333333333326" height="331.33333333333326"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="qAg-Z5-fyb" secondAttribute="height" id="6ZO-3K-VBA"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pq4-Fq-4je" customClass="CustomButton" customModule="MemoryPuzzle" customModuleProvider="target">
+                                        <rect key="frame" x="15.000000000000004" y="686" width="41.333333333333343" height="41.666666666666629"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Pq4-Fq-4je" secondAttribute="height" multiplier="1:1" id="xbI-KB-zQ8"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="smallBack.png"/>
+                                        <connections>
+                                            <action selector="backToTop:" destination="IdA-l1-lWt" eventType="touchUpInside" id="HBL-Zj-3aZ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Pq4-Fq-4je" firstAttribute="leading" secondItem="1K2-KD-hNt" secondAttribute="leading" constant="15" id="7O5-KQ-4lG"/>
+                                    <constraint firstAttribute="bottom" secondItem="D7g-7t-Iia" secondAttribute="bottom" constant="108" id="8nz-J9-XNB"/>
+                                    <constraint firstAttribute="bottom" secondItem="Pq4-Fq-4je" secondAttribute="bottom" constant="8.5" id="8s1-A4-YEY"/>
+                                    <constraint firstItem="D7g-7t-Iia" firstAttribute="leading" secondItem="1K2-KD-hNt" secondAttribute="leading" constant="81" id="D0D-s5-KG0"/>
+                                    <constraint firstAttribute="bottom" secondItem="t5C-Sh-fl3" secondAttribute="bottom" constant="113" id="EEt-EX-mLq"/>
+                                    <constraint firstItem="t5C-Sh-fl3" firstAttribute="top" secondItem="qAg-Z5-fyb" secondAttribute="bottom" constant="51.5" id="Hub-GD-ans"/>
+                                    <constraint firstAttribute="trailing" secondItem="t5C-Sh-fl3" secondAttribute="trailing" constant="80.5" id="NiW-xs-qbU"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Pq4-Fq-4je" secondAttribute="trailing" constant="20" symbolic="YES" id="Pf1-n0-l6c"/>
+                                    <constraint firstItem="t5C-Sh-fl3" firstAttribute="top" secondItem="qAg-Z5-fyb" secondAttribute="bottom" constant="51.5" id="Rw2-1k-7MN"/>
+                                    <constraint firstItem="qAg-Z5-fyb" firstAttribute="centerX" secondItem="1K2-KD-hNt" secondAttribute="centerX" id="oM0-rh-GjJ"/>
+                                    <constraint firstItem="qAg-Z5-fyb" firstAttribute="centerY" secondItem="1K2-KD-hNt" secondAttribute="centerY" constant="-75" id="pqJ-zk-9Jg"/>
+                                    <constraint firstItem="D7g-7t-Iia" firstAttribute="top" secondItem="qAg-Z5-fyb" secondAttribute="bottom" constant="56.5" id="t3B-HL-vBo"/>
+                                    <constraint firstItem="D7g-7t-Iia" firstAttribute="top" secondItem="qAg-Z5-fyb" secondAttribute="bottom" constant="56.5" id="xGo-MZ-wLu"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1K2-KD-hNt" firstAttribute="leading" secondItem="m7f-A9-H6j" secondAttribute="leading" id="3ws-no-VRG"/>
+                            <constraint firstItem="t5C-Sh-fl3" firstAttribute="width" secondItem="3u6-Tr-EIb" secondAttribute="width" multiplier="0.25" id="5FU-N0-SfA"/>
+                            <constraint firstItem="D7g-7t-Iia" firstAttribute="width" secondItem="3u6-Tr-EIb" secondAttribute="width" multiplier="0.25" id="SNW-Fz-YkU"/>
+                            <constraint firstItem="1K2-KD-hNt" firstAttribute="top" secondItem="3u6-Tr-EIb" secondAttribute="top" id="hZb-Bs-1Mg"/>
+                            <constraint firstItem="Pq4-Fq-4je" firstAttribute="width" secondItem="3u6-Tr-EIb" secondAttribute="width" multiplier="0.1" id="jab-p8-YQd"/>
+                            <constraint firstItem="1K2-KD-hNt" firstAttribute="trailing" secondItem="m7f-A9-H6j" secondAttribute="trailing" id="kjk-ti-LhG"/>
+                            <constraint firstItem="qAg-Z5-fyb" firstAttribute="width" secondItem="3u6-Tr-EIb" secondAttribute="width" multiplier="0.8" id="o9O-8n-pi2"/>
+                            <constraint firstItem="1K2-KD-hNt" firstAttribute="bottom" secondItem="m7f-A9-H6j" secondAttribute="bottom" id="yaB-MO-fs6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="m7f-A9-H6j"/>
+                    </view>
+                    <connections>
+                        <outlet property="backGroundView" destination="1K2-KD-hNt" id="6rT-99-4Jl"/>
+                        <outlet property="chooseButton" destination="D7g-7t-Iia" id="NJh-Ku-1Ft"/>
+                        <outlet property="finishButton" destination="t5C-Sh-fl3" id="Am7-0c-ktq"/>
+                        <outlet property="imageView" destination="qAg-Z5-fyb" id="1BG-Fi-cqq"/>
+                        <segue destination="go4-5U-FI2" kind="presentation" identifier="toViewController3" id="CyK-1f-P1K"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m7b-ic-R3G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="557.60000000000002" y="124.58770614692655"/>
+        </scene>
+        <!--View Controller3-->
+        <scene sceneID="lDD-x3-p6M">
+            <objects>
+                <viewController id="go4-5U-FI2" customClass="ViewController3" customModule="MemoryPuzzle" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="umM-r5-T3N">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="2" translatesAutoresizingMaskIntoConstraints="NO" id="Fx1-2s-Fck">
+                                <rect key="frame" x="101.66666666666669" y="473.66666666666669" width="211" height="31"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="pieceSlider:" destination="go4-5U-FI2" eventType="valueChanged" id="1Eq-eK-yPA"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pid-79-IYB">
+                                <rect key="frame" x="141.33333333333334" y="522.66666666666663" width="41.333333333333343" height="41"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Tanuki-Permanent-Marker" family="Tanuki Permanent Marker" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="1" height="-1"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OT2-iZ-p2t">
+                                <rect key="frame" x="41.333333333333343" y="112.33333333333334" width="331.33333333333326" height="331.33333333333326"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="OT2-iZ-p2t" secondAttribute="height" multiplier="1:1" id="Qlf-rt-5ki"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JvL-m9-y9t" customClass="CustomButton" customModule="MemoryPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="165.66666666666666" y="582" width="82.666666666666657" height="83"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="JvL-m9-y9t" secondAttribute="height" multiplier="1:1" id="JfA-q6-zuo"/>
+                                </constraints>
+                                <state key="normal" image="check.png">
+                                    <color key="titleColor" red="1" green="1" blue="0.0017020089290000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="gameStart:" destination="go4-5U-FI2" eventType="touchUpInside" id="hgN-MQ-ghc"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ピース" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rTS-I7-Oy4">
+                                <rect key="frame" x="199.33333333333337" y="528.66666666666663" width="165.66666666666663" height="25"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Tanuki-Permanent-Marker" family="Tanuki Permanent Marker" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="1" height="-1"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="OT2-iZ-p2t" firstAttribute="centerY" secondItem="umM-r5-T3N" secondAttribute="centerY" constant="-90" id="1H7-7p-y0a"/>
+                            <constraint firstItem="pid-79-IYB" firstAttribute="centerX" secondItem="umM-r5-T3N" secondAttribute="centerX" constant="-45" id="5r3-aD-1BN"/>
+                            <constraint firstItem="pid-79-IYB" firstAttribute="width" secondItem="umM-r5-T3N" secondAttribute="width" multiplier="0.1" id="Dcx-FL-gAQ"/>
+                            <constraint firstItem="Fx1-2s-Fck" firstAttribute="top" secondItem="OT2-iZ-p2t" secondAttribute="bottom" constant="30" id="Hy4-Uv-nUD"/>
+                            <constraint firstItem="JvL-m9-y9t" firstAttribute="top" secondItem="pid-79-IYB" secondAttribute="bottom" constant="18.5" id="JMO-LS-djS"/>
+                            <constraint firstItem="Fx1-2s-Fck" firstAttribute="width" secondItem="umM-r5-T3N" secondAttribute="width" multiplier="0.5" id="Mcm-uh-dtp"/>
+                            <constraint firstItem="JvL-m9-y9t" firstAttribute="width" secondItem="umM-r5-T3N" secondAttribute="width" multiplier="0.2" id="bA6-dC-Xt8"/>
+                            <constraint firstItem="Fx1-2s-Fck" firstAttribute="centerX" secondItem="umM-r5-T3N" secondAttribute="centerX" id="c9C-5P-3kS"/>
+                            <constraint firstItem="QcD-BG-R8T" firstAttribute="trailing" secondItem="rTS-I7-Oy4" secondAttribute="trailing" constant="49" id="ehU-y7-kt7"/>
+                            <constraint firstItem="rTS-I7-Oy4" firstAttribute="width" secondItem="umM-r5-T3N" secondAttribute="width" multiplier="0.4" id="hQZ-77-1Uw"/>
+                            <constraint firstItem="rTS-I7-Oy4" firstAttribute="top" secondItem="Fx1-2s-Fck" secondAttribute="bottom" constant="25" id="iTm-cz-Y7W"/>
+                            <constraint firstItem="OT2-iZ-p2t" firstAttribute="centerX" secondItem="umM-r5-T3N" secondAttribute="centerX" id="m27-EL-An6"/>
+                            <constraint firstItem="pid-79-IYB" firstAttribute="top" secondItem="Fx1-2s-Fck" secondAttribute="bottom" constant="19" id="myy-65-HFl"/>
+                            <constraint firstItem="rTS-I7-Oy4" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="pid-79-IYB" secondAttribute="trailing" constant="8" symbolic="YES" id="t4t-F5-JMF"/>
+                            <constraint firstItem="OT2-iZ-p2t" firstAttribute="width" secondItem="umM-r5-T3N" secondAttribute="width" multiplier="0.8" id="wEp-P9-KgR"/>
+                            <constraint firstItem="JvL-m9-y9t" firstAttribute="centerX" secondItem="umM-r5-T3N" secondAttribute="centerX" id="yp9-n7-sBz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QcD-BG-R8T"/>
+                    </view>
+                    <connections>
+                        <outlet property="backGroundImage" destination="OT2-iZ-p2t" id="njT-O1-xSJ"/>
+                        <outlet property="pieceLabel" destination="rTS-I7-Oy4" id="Xq7-3r-59H"/>
+                        <outlet property="pieceNumberLabel" destination="pid-79-IYB" id="2Jc-r6-uKy"/>
+                        <outlet property="slider" destination="Fx1-2s-Fck" id="7Gl-Wr-ljL"/>
+                        <segue destination="FBd-Vb-Xld" kind="presentation" identifier="toNine" id="DLQ-Le-PFT"/>
+                        <segue destination="VlP-wq-p6H" kind="presentation" identifier="toTwentyFive" id="al7-Ik-Fvs"/>
+                        <segue destination="ai5-3Q-UQd" kind="presentation" identifier="toFour" id="3yE-ZU-7dg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jlv-ZB-fTv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1335.2" y="122.78860569715144"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="H5N-vJ-Xb3">
+            <objects>
+                <viewController id="FBd-Vb-Xld" customClass="_ViewController" customModule="MemoryPuzzle" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="s5G-oS-owQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6o7-92-spA">
+                                <rect key="frame" x="41.333333333333343" y="102.33333333333334" width="331.33333333333326" height="331.33333333333326"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="6o7-92-spA" secondAttribute="height" multiplier="1:1" id="9Vg-9d-UBi"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DfN-HV-g2r" customClass="CustomButton" customModule="MemoryPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="337.33333333333331" y="658.33333333333337" width="62.333333333333314" height="62.333333333333371"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="DfN-HV-g2r" secondAttribute="height" multiplier="1:1" id="vXR-e0-szU"/>
+                                </constraints>
+                                <state key="normal" title="preview" image="eye.png"/>
+                                <connections>
+                                    <action selector="preViewButton:" destination="FBd-Vb-Xld" eventType="touchUpInside" id="1YJ-aa-RKp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="DfN-HV-g2r" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="MDS-6L-OHd" secondAttribute="leading" symbolic="YES" id="6cu-S3-9Im"/>
+                            <constraint firstItem="MDS-6L-OHd" firstAttribute="bottom" secondItem="DfN-HV-g2r" secondAttribute="bottom" constant="15.5" id="7xH-Kk-dDl"/>
+                            <constraint firstItem="6o7-92-spA" firstAttribute="centerX" secondItem="s5G-oS-owQ" secondAttribute="centerX" id="DM0-wu-qc9"/>
+                            <constraint firstItem="6o7-92-spA" firstAttribute="width" secondItem="s5G-oS-owQ" secondAttribute="width" multiplier="0.8" id="Lxk-MV-U1W"/>
+                            <constraint firstItem="6o7-92-spA" firstAttribute="centerY" secondItem="s5G-oS-owQ" secondAttribute="centerY" constant="-100" id="l2u-v2-llI"/>
+                            <constraint firstItem="MDS-6L-OHd" firstAttribute="trailing" secondItem="DfN-HV-g2r" secondAttribute="trailing" constant="14.5" id="m8h-VD-0qg"/>
+                            <constraint firstItem="DfN-HV-g2r" firstAttribute="width" secondItem="s5G-oS-owQ" secondAttribute="width" multiplier="0.15" id="vzO-ij-ebq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="MDS-6L-OHd"/>
+                    </view>
+                    <connections>
+                        <outlet property="preView" destination="6o7-92-spA" id="lJG-lk-tmz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LlJ-QF-iDp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2165.5999999999999" y="-567.16641679160421"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="G0Z-qc-3Or">
+            <objects>
+                <viewController id="VlP-wq-p6H" customClass="_5ViewController" customModule="MemoryPuzzle" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="K1C-yc-FhM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uBy-Us-PrS">
+                                <rect key="frame" x="41.333333333333343" y="102.33333333333334" width="331.33333333333326" height="331.33333333333326"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="uBy-Us-PrS" secondAttribute="height" multiplier="1:1" id="d1W-zx-egO"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rGo-rP-NbK" customClass="CustomButton" customModule="MemoryPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="337.33333333333331" y="658.33333333333337" width="62.333333333333314" height="62.333333333333371"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="rGo-rP-NbK" secondAttribute="height" multiplier="1:1" id="JFx-tm-2Vi"/>
+                                </constraints>
+                                <state key="normal" title="preview" image="eye.png"/>
+                                <connections>
+                                    <action selector="preViewButton:" destination="VlP-wq-p6H" eventType="touchUpInside" id="YiN-hh-eHN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="rGo-rP-NbK" firstAttribute="width" secondItem="K1C-yc-FhM" secondAttribute="width" multiplier="0.15" id="7hB-2O-20j"/>
+                            <constraint firstItem="aro-za-rb8" firstAttribute="bottom" secondItem="rGo-rP-NbK" secondAttribute="bottom" constant="15.5" id="9Hb-3a-nhx"/>
+                            <constraint firstItem="uBy-Us-PrS" firstAttribute="centerX" secondItem="K1C-yc-FhM" secondAttribute="centerX" id="DLr-qb-GaP"/>
+                            <constraint firstItem="aro-za-rb8" firstAttribute="trailing" secondItem="rGo-rP-NbK" secondAttribute="trailing" constant="14.5" id="RkU-CR-dKW"/>
+                            <constraint firstItem="uBy-Us-PrS" firstAttribute="centerY" secondItem="K1C-yc-FhM" secondAttribute="centerY" constant="-100" id="jIa-Ir-IBX"/>
+                            <constraint firstItem="rGo-rP-NbK" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="aro-za-rb8" secondAttribute="leading" symbolic="YES" id="qSV-h0-aye"/>
+                            <constraint firstItem="uBy-Us-PrS" firstAttribute="width" secondItem="K1C-yc-FhM" secondAttribute="width" multiplier="0.8" id="sr9-xZ-Z0y"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aro-za-rb8"/>
+                    </view>
+                    <connections>
+                        <outlet property="preView" destination="uBy-Us-PrS" id="wKf-4f-aS3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rcr-Bl-cXG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2165.5999999999999" y="815.44227886056979"/>
+        </scene>
+        <!--View Controller4-->
+        <scene sceneID="wJS-UK-hxz">
+            <objects>
+                <viewController id="ai5-3Q-UQd" customClass="ViewController4" customModule="MemoryPuzzle" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Lor-Im-ePF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VWQ-9F-eJa">
+                                <rect key="frame" x="41.333333333333343" y="102.33333333333334" width="331.33333333333326" height="331.33333333333326"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="VWQ-9F-eJa" secondAttribute="height" multiplier="1:1" id="o4g-g9-iGb"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0gk-bV-q47" customClass="CustomButton" customModule="MemoryPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="337.33333333333331" y="658.33333333333337" width="62.333333333333314" height="62.333333333333371"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="0gk-bV-q47" secondAttribute="height" multiplier="1:1" id="5xN-Uf-Q71"/>
+                                </constraints>
+                                <state key="normal" title="preview" image="eye.png"/>
+                                <connections>
+                                    <action selector="preViewButton:" destination="ai5-3Q-UQd" eventType="touchUpInside" id="lUE-p1-LiC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="VWQ-9F-eJa" firstAttribute="centerX" secondItem="Lor-Im-ePF" secondAttribute="centerX" id="4tC-Mi-phS"/>
+                            <constraint firstItem="Nec-AG-Mgo" firstAttribute="trailing" secondItem="0gk-bV-q47" secondAttribute="trailing" constant="14.5" id="6gO-pT-rHw"/>
+                            <constraint firstItem="0gk-bV-q47" firstAttribute="width" secondItem="Lor-Im-ePF" secondAttribute="width" multiplier="0.15" id="ALa-eI-wJZ"/>
+                            <constraint firstItem="VWQ-9F-eJa" firstAttribute="width" secondItem="Lor-Im-ePF" secondAttribute="width" multiplier="0.8" id="Zo1-sn-cJm"/>
+                            <constraint firstItem="0gk-bV-q47" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Nec-AG-Mgo" secondAttribute="leading" symbolic="YES" id="fYG-h1-9zg"/>
+                            <constraint firstItem="Nec-AG-Mgo" firstAttribute="bottom" secondItem="0gk-bV-q47" secondAttribute="bottom" constant="15.5" id="lCh-zy-vwJ"/>
+                            <constraint firstItem="VWQ-9F-eJa" firstAttribute="centerY" secondItem="Lor-Im-ePF" secondAttribute="centerY" constant="-100" id="x34-3m-G5z"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Nec-AG-Mgo"/>
+                    </view>
+                    <connections>
+                        <outlet property="preView" destination="VWQ-9F-eJa" id="9RF-Rf-dtY"/>
+                        <outlet property="viewButton" destination="0gk-bV-q47" id="nS8-pi-3go"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ivk-SP-PS4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2165.5999999999999" y="123.68815592203899"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="check.png" width="256" height="256"/>
+        <image name="colorPicker.png" width="256" height="256"/>
+        <image name="eye.png" width="256" height="256"/>
+        <image name="imageAdd.png" width="240" height="240"/>
+        <image name="smallBack.png" width="240" height="240"/>
+    </resources>
 </document>

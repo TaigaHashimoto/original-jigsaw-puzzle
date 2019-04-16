@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C65683878C1864C65DAFBAD /* Pods_MemoryPuzzle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FDDE41A62EAE0A2D3651267 /* Pods_MemoryPuzzle.framework */; };
 		B202883422243A5700F26C04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B202883322243A5700F26C04 /* AppDelegate.swift */; };
 		B202883622243A5700F26C04 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B202883522243A5700F26C04 /* ViewController.swift */; };
 		B202883922243A5700F26C04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B202883722243A5700F26C04 /* Main.storyboard */; };
@@ -15,6 +16,58 @@
 		B202884122243A5C00F26C04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B202883F22243A5C00F26C04 /* LaunchScreen.storyboard */; };
 		B202884C22243A5D00F26C04 /* MemoryPuzzleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B202884B22243A5D00F26C04 /* MemoryPuzzleTests.swift */; };
 		B202885722243A5D00F26C04 /* MemoryPuzzleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B202885622243A5D00F26C04 /* MemoryPuzzleUITests.swift */; };
+		B20288652224439900F26C04 /* default.png in Resources */ = {isa = PBXBuildFile; fileRef = B20288642224439800F26C04 /* default.png */; };
+		B20288672224448500F26C04 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20288662224448500F26C04 /* ViewController2.swift */; };
+		B202886A222511A900F26C04 /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2028869222511A900F26C04 /* ViewController3.swift */; };
+		B202886C22251CC800F26C04 /* ViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = B202886B22251CC800F26C04 /* ViewController4.swift */; };
+		B216C0E42225A01C00CC22E1 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B216C0E32225A01C00CC22E1 /* ModalViewController.swift */; };
+		B216C0E62225A07800CC22E1 /* CustomPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B216C0E52225A07800CC22E1 /* CustomPresentationController.swift */; };
+		B216C0E82226808100CC22E1 /* 9ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B216C0E72226808100CC22E1 /* 9ViewController.swift */; };
+		B216C0EA2226809100CC22E1 /* 25ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B216C0E92226809100CC22E1 /* 25ViewController.swift */; };
+		B216C146222A6EE300CC22E1 /* BottomPopupUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B216C13E222A6EE300CC22E1 /* BottomPopupUtils.swift */; };
+		B216C147222A6EE300CC22E1 /* BottomPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B216C13F222A6EE300CC22E1 /* BottomPopupViewController.swift */; };
+		B216C148222A6EE300CC22E1 /* BottomPopupDismissInteractionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B216C140222A6EE300CC22E1 /* BottomPopupDismissInteractionController.swift */; };
+		B216C149222A6EE300CC22E1 /* BottomPopupNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B216C141222A6EE300CC22E1 /* BottomPopupNavigationController.swift */; };
+		B216C14A222A6EE300CC22E1 /* BottomPopupDismissAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B216C142222A6EE300CC22E1 /* BottomPopupDismissAnimator.swift */; };
+		B216C14B222A6EE300CC22E1 /* BottomPopupPresentAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B216C143222A6EE300CC22E1 /* BottomPopupPresentAnimator.swift */; };
+		B216C14C222A6EE300CC22E1 /* BottomPopupTransitionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B216C144222A6EE300CC22E1 /* BottomPopupTransitionHandler.swift */; };
+		B216C14D222A6EE300CC22E1 /* BottomPopupPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B216C145222A6EE300CC22E1 /* BottomPopupPresentationController.swift */; };
+		B21F1A5F222D891100BA315A /* jigsawpuzzle.png in Resources */ = {isa = PBXBuildFile; fileRef = B21F1A5E222D891100BA315A /* jigsawpuzzle.png */; };
+		B21F1A63222E299800BA315A /* TanukiMagic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B21F1A62222E297500BA315A /* TanukiMagic.ttf */; };
+		B21F1A65222E331300BA315A /* trash.png in Resources */ = {isa = PBXBuildFile; fileRef = B21F1A64222E331200BA315A /* trash.png */; };
+		B21F1A67222E4E4F00BA315A /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21F1A66222E4E4F00BA315A /* CustomButton.swift */; };
+		B21F1A6B222E695D00BA315A /* eye.png in Resources */ = {isa = PBXBuildFile; fileRef = B21F1A6A222E695D00BA315A /* eye.png */; };
+		B2213767223023F40022263E /* colorPicker.png in Resources */ = {isa = PBXBuildFile; fileRef = B2213766223023F40022263E /* colorPicker.png */; };
+		B221376922302A110022263E /* imageAdd.png in Resources */ = {isa = PBXBuildFile; fileRef = B221376822302A110022263E /* imageAdd.png */; };
+		B221376B22302A1A0022263E /* add.png in Resources */ = {isa = PBXBuildFile; fileRef = B221376A22302A1A0022263E /* add.png */; };
+		B221376D22302A2B0022263E /* check.png in Resources */ = {isa = PBXBuildFile; fileRef = B221376C22302A2B0022263E /* check.png */; };
+		B221376F22302DBB0022263E /* trashCan.png in Resources */ = {isa = PBXBuildFile; fileRef = B221376E22302DBA0022263E /* trashCan.png */; };
+		B231FA822230944200B16FC4 /* share.png in Resources */ = {isa = PBXBuildFile; fileRef = B231FA812230944200B16FC4 /* share.png */; };
+		B231FA842230945000B16FC4 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = B231FA832230945000B16FC4 /* back.png */; };
+		B231FA862230946200B16FC4 /* save.png in Resources */ = {isa = PBXBuildFile; fileRef = B231FA852230946200B16FC4 /* save.png */; };
+		B231FA882230955500B16FC4 /* win.png in Resources */ = {isa = PBXBuildFile; fileRef = B231FA872230955500B16FC4 /* win.png */; };
+		B231FA9F223260FB00B16FC4 /* iTunesArtwork@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B231FA8A223260FB00B16FC4 /* iTunesArtwork@1x.png */; };
+		B231FAA0223260FB00B16FC4 /* Icon-App-76x76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B231FA8C223260FB00B16FC4 /* Icon-App-76x76@2x.png */; };
+		B231FAA1223260FB00B16FC4 /* Icon-App-29x29@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B231FA8D223260FB00B16FC4 /* Icon-App-29x29@1x.png */; };
+		B231FAA2223260FB00B16FC4 /* Icon-App-40x40@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B231FA8E223260FB00B16FC4 /* Icon-App-40x40@1x.png */; };
+		B231FAA3223260FB00B16FC4 /* Icon-App-20x20@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B231FA8F223260FB00B16FC4 /* Icon-App-20x20@1x.png */; };
+		B231FAA4223260FB00B16FC4 /* Icon-App-83.5x83.5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B231FA90223260FB00B16FC4 /* Icon-App-83.5x83.5@2x.png */; };
+		B231FAA5223260FB00B16FC4 /* Icon-App-20x20@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B231FA91223260FB00B16FC4 /* Icon-App-20x20@3x.png */; };
+		B231FAA6223260FB00B16FC4 /* ItunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B231FA92223260FB00B16FC4 /* ItunesArtwork@2x.png */; };
+		B231FAA7223260FB00B16FC4 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = B231FA93223260FB00B16FC4 /* Contents.json */; };
+		B231FAA8223260FB00B16FC4 /* Icon-App-20x20@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B231FA94223260FB00B16FC4 /* Icon-App-20x20@2x.png */; };
+		B231FAA9223260FB00B16FC4 /* Icon-App-29x29@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B231FA95223260FB00B16FC4 /* Icon-App-29x29@3x.png */; };
+		B231FAAA223260FB00B16FC4 /* Icon-App-40x40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B231FA96223260FB00B16FC4 /* Icon-App-40x40@2x.png */; };
+		B231FAAB223260FB00B16FC4 /* Icon-App-60x60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B231FA97223260FB00B16FC4 /* Icon-App-60x60@3x.png */; };
+		B231FAAC223260FB00B16FC4 /* Icon-App-60x60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B231FA98223260FB00B16FC4 /* Icon-App-60x60@2x.png */; };
+		B231FAAD223260FB00B16FC4 /* Icon-App-76x76@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B231FA99223260FB00B16FC4 /* Icon-App-76x76@1x.png */; };
+		B231FAAE223260FB00B16FC4 /* Icon-App-40x40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B231FA9A223260FB00B16FC4 /* Icon-App-40x40@3x.png */; };
+		B231FAAF223260FB00B16FC4 /* Icon-App-29x29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B231FA9B223260FB00B16FC4 /* Icon-App-29x29@2x.png */; };
+		B231FAB1223260FB00B16FC4 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B231FA9D223260FB00B16FC4 /* iTunesArtwork@2x.png */; };
+		B231FAB2223260FB00B16FC4 /* iTunesArtwork@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B231FA9E223260FB00B16FC4 /* iTunesArtwork@3x.png */; };
+		B27BA9452232720D001AFDE2 /* smallBack.png in Resources */ = {isa = PBXBuildFile; fileRef = B27BA9442232720C001AFDE2 /* smallBack.png */; };
+		C32773F0FCCB8041264EC6AA /* Pods_MemoryPuzzleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26A54774A99D255BA487A0F8 /* Pods_MemoryPuzzleTests.framework */; };
+		F2EE994858D068854F43396A /* Pods_MemoryPuzzleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B37762C8FB50591E34228CB /* Pods_MemoryPuzzleUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +88,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01335492CE1842CAE520BF24 /* Pods-MemoryPuzzleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MemoryPuzzleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MemoryPuzzleTests/Pods-MemoryPuzzleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		26A54774A99D255BA487A0F8 /* Pods_MemoryPuzzleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MemoryPuzzleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B37762C8FB50591E34228CB /* Pods_MemoryPuzzleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MemoryPuzzleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FDDE41A62EAE0A2D3651267 /* Pods_MemoryPuzzle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MemoryPuzzle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CD51ACA255C25CF9A6C3D50 /* Pods-MemoryPuzzleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MemoryPuzzleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MemoryPuzzleTests/Pods-MemoryPuzzleTests.release.xcconfig"; sourceTree = "<group>"; };
+		98B43DAE748D6ACF5332B05F /* Pods-MemoryPuzzleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MemoryPuzzleUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MemoryPuzzleUITests/Pods-MemoryPuzzleUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AE0CC3FF5449D63868774D01 /* Pods-MemoryPuzzleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MemoryPuzzleUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MemoryPuzzleUITests/Pods-MemoryPuzzleUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B1BEE2965240FD0EFE146B71 /* Pods-MemoryPuzzle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MemoryPuzzle.release.xcconfig"; path = "Pods/Target Support Files/Pods-MemoryPuzzle/Pods-MemoryPuzzle.release.xcconfig"; sourceTree = "<group>"; };
 		B202883022243A5700F26C04 /* MemoryPuzzle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemoryPuzzle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B202883322243A5700F26C04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B202883522243A5700F26C04 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +110,57 @@
 		B202885222243A5D00F26C04 /* MemoryPuzzleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MemoryPuzzleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B202885622243A5D00F26C04 /* MemoryPuzzleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryPuzzleUITests.swift; sourceTree = "<group>"; };
 		B202885822243A5D00F26C04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B20288642224439800F26C04 /* default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = default.png; sourceTree = "<group>"; };
+		B20288662224448500F26C04 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		B2028869222511A900F26C04 /* ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
+		B202886B22251CC800F26C04 /* ViewController4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController4.swift; sourceTree = "<group>"; };
+		B216C0E32225A01C00CC22E1 /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
+		B216C0E52225A07800CC22E1 /* CustomPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPresentationController.swift; sourceTree = "<group>"; };
+		B216C0E72226808100CC22E1 /* 9ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 9ViewController.swift; sourceTree = "<group>"; };
+		B216C0E92226809100CC22E1 /* 25ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 25ViewController.swift; sourceTree = "<group>"; };
+		B216C13E222A6EE300CC22E1 /* BottomPopupUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomPopupUtils.swift; sourceTree = "<group>"; };
+		B216C13F222A6EE300CC22E1 /* BottomPopupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomPopupViewController.swift; sourceTree = "<group>"; };
+		B216C140222A6EE300CC22E1 /* BottomPopupDismissInteractionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomPopupDismissInteractionController.swift; sourceTree = "<group>"; };
+		B216C141222A6EE300CC22E1 /* BottomPopupNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomPopupNavigationController.swift; sourceTree = "<group>"; };
+		B216C142222A6EE300CC22E1 /* BottomPopupDismissAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomPopupDismissAnimator.swift; sourceTree = "<group>"; };
+		B216C143222A6EE300CC22E1 /* BottomPopupPresentAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomPopupPresentAnimator.swift; sourceTree = "<group>"; };
+		B216C144222A6EE300CC22E1 /* BottomPopupTransitionHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomPopupTransitionHandler.swift; sourceTree = "<group>"; };
+		B216C145222A6EE300CC22E1 /* BottomPopupPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomPopupPresentationController.swift; sourceTree = "<group>"; };
+		B21F1A5E222D891100BA315A /* jigsawpuzzle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jigsawpuzzle.png; sourceTree = "<group>"; };
+		B21F1A62222E297500BA315A /* TanukiMagic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = TanukiMagic.ttf; sourceTree = "<group>"; };
+		B21F1A64222E331200BA315A /* trash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trash.png; sourceTree = "<group>"; };
+		B21F1A66222E4E4F00BA315A /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		B21F1A6A222E695D00BA315A /* eye.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = eye.png; path = ../../../../ImageSample/eye.png; sourceTree = "<group>"; };
+		B2213766223023F40022263E /* colorPicker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = colorPicker.png; sourceTree = "<group>"; };
+		B221376822302A110022263E /* imageAdd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imageAdd.png; sourceTree = "<group>"; };
+		B221376A22302A1A0022263E /* add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add.png; sourceTree = "<group>"; };
+		B221376C22302A2B0022263E /* check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check.png; sourceTree = "<group>"; };
+		B221376E22302DBA0022263E /* trashCan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trashCan.png; sourceTree = "<group>"; };
+		B231FA812230944200B16FC4 /* share.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = share.png; sourceTree = "<group>"; };
+		B231FA832230945000B16FC4 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		B231FA852230946200B16FC4 /* save.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = save.png; sourceTree = "<group>"; };
+		B231FA872230955500B16FC4 /* win.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = win.png; sourceTree = "<group>"; };
+		B231FA8A223260FB00B16FC4 /* iTunesArtwork@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@1x.png"; sourceTree = "<group>"; };
+		B231FA8C223260FB00B16FC4 /* Icon-App-76x76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-76x76@2x.png"; sourceTree = "<group>"; };
+		B231FA8D223260FB00B16FC4 /* Icon-App-29x29@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-29x29@1x.png"; sourceTree = "<group>"; };
+		B231FA8E223260FB00B16FC4 /* Icon-App-40x40@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-40x40@1x.png"; sourceTree = "<group>"; };
+		B231FA8F223260FB00B16FC4 /* Icon-App-20x20@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-20x20@1x.png"; sourceTree = "<group>"; };
+		B231FA90223260FB00B16FC4 /* Icon-App-83.5x83.5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-83.5x83.5@2x.png"; sourceTree = "<group>"; };
+		B231FA91223260FB00B16FC4 /* Icon-App-20x20@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-20x20@3x.png"; sourceTree = "<group>"; };
+		B231FA92223260FB00B16FC4 /* ItunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ItunesArtwork@2x.png"; sourceTree = "<group>"; };
+		B231FA93223260FB00B16FC4 /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		B231FA94223260FB00B16FC4 /* Icon-App-20x20@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-20x20@2x.png"; sourceTree = "<group>"; };
+		B231FA95223260FB00B16FC4 /* Icon-App-29x29@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-29x29@3x.png"; sourceTree = "<group>"; };
+		B231FA96223260FB00B16FC4 /* Icon-App-40x40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-40x40@2x.png"; sourceTree = "<group>"; };
+		B231FA97223260FB00B16FC4 /* Icon-App-60x60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-60x60@3x.png"; sourceTree = "<group>"; };
+		B231FA98223260FB00B16FC4 /* Icon-App-60x60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-60x60@2x.png"; sourceTree = "<group>"; };
+		B231FA99223260FB00B16FC4 /* Icon-App-76x76@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-76x76@1x.png"; sourceTree = "<group>"; };
+		B231FA9A223260FB00B16FC4 /* Icon-App-40x40@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-40x40@3x.png"; sourceTree = "<group>"; };
+		B231FA9B223260FB00B16FC4 /* Icon-App-29x29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-29x29@2x.png"; sourceTree = "<group>"; };
+		B231FA9D223260FB00B16FC4 /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
+		B231FA9E223260FB00B16FC4 /* iTunesArtwork@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@3x.png"; sourceTree = "<group>"; };
+		B27BA9442232720C001AFDE2 /* smallBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = smallBack.png; sourceTree = "<group>"; };
+		C4DFF2ACE7E5F15AC7FFC96A /* Pods-MemoryPuzzle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MemoryPuzzle.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MemoryPuzzle/Pods-MemoryPuzzle.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +168,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C65683878C1864C65DAFBAD /* Pods_MemoryPuzzle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +176,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C32773F0FCCB8041264EC6AA /* Pods_MemoryPuzzleTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +184,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2EE994858D068854F43396A /* Pods_MemoryPuzzleUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4AC8418B7C0881D8C7DB9B36 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C4DFF2ACE7E5F15AC7FFC96A /* Pods-MemoryPuzzle.debug.xcconfig */,
+				B1BEE2965240FD0EFE146B71 /* Pods-MemoryPuzzle.release.xcconfig */,
+				01335492CE1842CAE520BF24 /* Pods-MemoryPuzzleTests.debug.xcconfig */,
+				7CD51ACA255C25CF9A6C3D50 /* Pods-MemoryPuzzleTests.release.xcconfig */,
+				98B43DAE748D6ACF5332B05F /* Pods-MemoryPuzzleUITests.debug.xcconfig */,
+				AE0CC3FF5449D63868774D01 /* Pods-MemoryPuzzleUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B202882722243A5700F26C04 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +211,8 @@
 				B202884A22243A5D00F26C04 /* MemoryPuzzleTests */,
 				B202885522243A5D00F26C04 /* MemoryPuzzleUITests */,
 				B202883122243A5700F26C04 /* Products */,
+				4AC8418B7C0881D8C7DB9B36 /* Pods */,
+				EDFA28F41B67D71B435F4873 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,10 +229,22 @@
 		B202883222243A5700F26C04 /* MemoryPuzzle */ = {
 			isa = PBXGroup;
 			children = (
+				B20288682224453100F26C04 /* ImageSource */,
+				B216C13D222A6EE300CC22E1 /* BottomPopupController */,
 				B202883322243A5700F26C04 /* AppDelegate.swift */,
 				B202883522243A5700F26C04 /* ViewController.swift */,
+				B20288662224448500F26C04 /* ViewController2.swift */,
+				B2028869222511A900F26C04 /* ViewController3.swift */,
+				B202886B22251CC800F26C04 /* ViewController4.swift */,
+				B216C0E72226808100CC22E1 /* 9ViewController.swift */,
+				B216C0E92226809100CC22E1 /* 25ViewController.swift */,
+				B216C0E32225A01C00CC22E1 /* ModalViewController.swift */,
+				B216C0E52225A07800CC22E1 /* CustomPresentationController.swift */,
+				B21F1A66222E4E4F00BA315A /* CustomButton.swift */,
 				B202883722243A5700F26C04 /* Main.storyboard */,
 				B202883D22243A5C00F26C04 /* Assets.xcassets */,
+				B231FA89223260FB00B16FC4 /* ios */,
+				B21F1A62222E297500BA315A /* TanukiMagic.ttf */,
 				B202883F22243A5C00F26C04 /* LaunchScreen.storyboard */,
 				B202884222243A5C00F26C04 /* Info.plist */,
 				B202883A22243A5700F26C04 /* MemoryPuzzle.xcdatamodeld */,
@@ -128,6 +270,86 @@
 			path = MemoryPuzzleUITests;
 			sourceTree = "<group>";
 		};
+		B20288682224453100F26C04 /* ImageSource */ = {
+			isa = PBXGroup;
+			children = (
+				B27BA9442232720C001AFDE2 /* smallBack.png */,
+				B231FA812230944200B16FC4 /* share.png */,
+				B231FA832230945000B16FC4 /* back.png */,
+				B231FA852230946200B16FC4 /* save.png */,
+				B21F1A5E222D891100BA315A /* jigsawpuzzle.png */,
+				B221376E22302DBA0022263E /* trashCan.png */,
+				B21F1A64222E331200BA315A /* trash.png */,
+				B20288642224439800F26C04 /* default.png */,
+				B221376822302A110022263E /* imageAdd.png */,
+				B231FA872230955500B16FC4 /* win.png */,
+				B221376C22302A2B0022263E /* check.png */,
+				B21F1A6A222E695D00BA315A /* eye.png */,
+				B221376A22302A1A0022263E /* add.png */,
+				B2213766223023F40022263E /* colorPicker.png */,
+			);
+			path = ImageSource;
+			sourceTree = "<group>";
+		};
+		B216C13D222A6EE300CC22E1 /* BottomPopupController */ = {
+			isa = PBXGroup;
+			children = (
+				B216C13E222A6EE300CC22E1 /* BottomPopupUtils.swift */,
+				B216C13F222A6EE300CC22E1 /* BottomPopupViewController.swift */,
+				B216C140222A6EE300CC22E1 /* BottomPopupDismissInteractionController.swift */,
+				B216C141222A6EE300CC22E1 /* BottomPopupNavigationController.swift */,
+				B216C142222A6EE300CC22E1 /* BottomPopupDismissAnimator.swift */,
+				B216C143222A6EE300CC22E1 /* BottomPopupPresentAnimator.swift */,
+				B216C144222A6EE300CC22E1 /* BottomPopupTransitionHandler.swift */,
+				B216C145222A6EE300CC22E1 /* BottomPopupPresentationController.swift */,
+			);
+			path = BottomPopupController;
+			sourceTree = "<group>";
+		};
+		B231FA89223260FB00B16FC4 /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				B231FA8A223260FB00B16FC4 /* iTunesArtwork@1x.png */,
+				B231FA8B223260FB00B16FC4 /* AppIcon.appiconset */,
+				B231FA9D223260FB00B16FC4 /* iTunesArtwork@2x.png */,
+				B231FA9E223260FB00B16FC4 /* iTunesArtwork@3x.png */,
+			);
+			path = ios;
+			sourceTree = "<group>";
+		};
+		B231FA8B223260FB00B16FC4 /* AppIcon.appiconset */ = {
+			isa = PBXGroup;
+			children = (
+				B231FA8C223260FB00B16FC4 /* Icon-App-76x76@2x.png */,
+				B231FA8D223260FB00B16FC4 /* Icon-App-29x29@1x.png */,
+				B231FA8E223260FB00B16FC4 /* Icon-App-40x40@1x.png */,
+				B231FA8F223260FB00B16FC4 /* Icon-App-20x20@1x.png */,
+				B231FA90223260FB00B16FC4 /* Icon-App-83.5x83.5@2x.png */,
+				B231FA91223260FB00B16FC4 /* Icon-App-20x20@3x.png */,
+				B231FA92223260FB00B16FC4 /* ItunesArtwork@2x.png */,
+				B231FA93223260FB00B16FC4 /* Contents.json */,
+				B231FA94223260FB00B16FC4 /* Icon-App-20x20@2x.png */,
+				B231FA95223260FB00B16FC4 /* Icon-App-29x29@3x.png */,
+				B231FA96223260FB00B16FC4 /* Icon-App-40x40@2x.png */,
+				B231FA97223260FB00B16FC4 /* Icon-App-60x60@3x.png */,
+				B231FA98223260FB00B16FC4 /* Icon-App-60x60@2x.png */,
+				B231FA99223260FB00B16FC4 /* Icon-App-76x76@1x.png */,
+				B231FA9A223260FB00B16FC4 /* Icon-App-40x40@3x.png */,
+				B231FA9B223260FB00B16FC4 /* Icon-App-29x29@2x.png */,
+			);
+			path = AppIcon.appiconset;
+			sourceTree = "<group>";
+		};
+		EDFA28F41B67D71B435F4873 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4FDDE41A62EAE0A2D3651267 /* Pods_MemoryPuzzle.framework */,
+				26A54774A99D255BA487A0F8 /* Pods_MemoryPuzzleTests.framework */,
+				3B37762C8FB50591E34228CB /* Pods_MemoryPuzzleUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +357,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B202885B22243A5D00F26C04 /* Build configuration list for PBXNativeTarget "MemoryPuzzle" */;
 			buildPhases = (
+				1E7C3BB82E3BDEE932C2B449 /* [CP] Check Pods Manifest.lock */,
 				B202882C22243A5700F26C04 /* Sources */,
 				B202882D22243A5700F26C04 /* Frameworks */,
 				B202882E22243A5700F26C04 /* Resources */,
+				FCCDB38145C44E7CB42B7EBB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +376,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B202885E22243A5D00F26C04 /* Build configuration list for PBXNativeTarget "MemoryPuzzleTests" */;
 			buildPhases = (
+				B5A73F3C23C4463E2EF05936 /* [CP] Check Pods Manifest.lock */,
 				B202884322243A5D00F26C04 /* Sources */,
 				B202884422243A5D00F26C04 /* Frameworks */,
 				B202884522243A5D00F26C04 /* Resources */,
@@ -170,6 +395,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B202886122243A5D00F26C04 /* Build configuration list for PBXNativeTarget "MemoryPuzzleUITests" */;
 			buildPhases = (
+				110F022DD4DAFE45F1615D1C /* [CP] Check Pods Manifest.lock */,
 				B202884E22243A5D00F26C04 /* Sources */,
 				B202884F22243A5D00F26C04 /* Frameworks */,
 				B202885022243A5D00F26C04 /* Resources */,
@@ -232,9 +458,43 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B231FAA4223260FB00B16FC4 /* Icon-App-83.5x83.5@2x.png in Resources */,
+				B231FAAA223260FB00B16FC4 /* Icon-App-40x40@2x.png in Resources */,
+				B231FA882230955500B16FC4 /* win.png in Resources */,
+				B231FAAE223260FB00B16FC4 /* Icon-App-40x40@3x.png in Resources */,
+				B21F1A63222E299800BA315A /* TanukiMagic.ttf in Resources */,
+				B221376D22302A2B0022263E /* check.png in Resources */,
+				B27BA9452232720D001AFDE2 /* smallBack.png in Resources */,
+				B21F1A5F222D891100BA315A /* jigsawpuzzle.png in Resources */,
+				B231FA9F223260FB00B16FC4 /* iTunesArtwork@1x.png in Resources */,
+				B231FAAD223260FB00B16FC4 /* Icon-App-76x76@1x.png in Resources */,
+				B221376B22302A1A0022263E /* add.png in Resources */,
+				B231FAA7223260FB00B16FC4 /* Contents.json in Resources */,
+				B221376F22302DBB0022263E /* trashCan.png in Resources */,
+				B231FAA9223260FB00B16FC4 /* Icon-App-29x29@3x.png in Resources */,
+				B2213767223023F40022263E /* colorPicker.png in Resources */,
+				B231FAA6223260FB00B16FC4 /* ItunesArtwork@2x.png in Resources */,
+				B231FA822230944200B16FC4 /* share.png in Resources */,
+				B231FAA3223260FB00B16FC4 /* Icon-App-20x20@1x.png in Resources */,
+				B231FAAC223260FB00B16FC4 /* Icon-App-60x60@2x.png in Resources */,
+				B231FAA5223260FB00B16FC4 /* Icon-App-20x20@3x.png in Resources */,
+				B231FAA2223260FB00B16FC4 /* Icon-App-40x40@1x.png in Resources */,
+				B221376922302A110022263E /* imageAdd.png in Resources */,
 				B202884122243A5C00F26C04 /* LaunchScreen.storyboard in Resources */,
+				B231FA862230946200B16FC4 /* save.png in Resources */,
+				B231FAA0223260FB00B16FC4 /* Icon-App-76x76@2x.png in Resources */,
+				B231FAAF223260FB00B16FC4 /* Icon-App-29x29@2x.png in Resources */,
+				B231FAAB223260FB00B16FC4 /* Icon-App-60x60@3x.png in Resources */,
 				B202883E22243A5C00F26C04 /* Assets.xcassets in Resources */,
 				B202883922243A5700F26C04 /* Main.storyboard in Resources */,
+				B231FAA1223260FB00B16FC4 /* Icon-App-29x29@1x.png in Resources */,
+				B231FA842230945000B16FC4 /* back.png in Resources */,
+				B231FAB1223260FB00B16FC4 /* iTunesArtwork@2x.png in Resources */,
+				B231FAB2223260FB00B16FC4 /* iTunesArtwork@3x.png in Resources */,
+				B231FAA8223260FB00B16FC4 /* Icon-App-20x20@2x.png in Resources */,
+				B21F1A65222E331300BA315A /* trash.png in Resources */,
+				B20288652224439900F26C04 /* default.png in Resources */,
+				B21F1A6B222E695D00BA315A /* eye.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,14 +514,125 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		110F022DD4DAFE45F1615D1C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MemoryPuzzleUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1E7C3BB82E3BDEE932C2B449 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MemoryPuzzle-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5A73F3C23C4463E2EF05936 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MemoryPuzzleTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FCCDB38145C44E7CB42B7EBB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MemoryPuzzle/Pods-MemoryPuzzle-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AMColorPicker/AMColorPicker.framework",
+				"${BUILT_PRODUCTS_DIR}/BottomPopup/BottomPopup.framework",
+				"${BUILT_PRODUCTS_DIR}/BubbleTransition/BubbleTransition.framework",
+				"${BUILT_PRODUCTS_DIR}/IHProgressHUD/IHProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/LINEActivity/LINEActivity.framework",
+				"${BUILT_PRODUCTS_DIR}/PuzzleMaker/PuzzleMaker.framework",
+				"${BUILT_PRODUCTS_DIR}/SAConfettiView/SAConfettiView.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AMColorPicker.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BottomPopup.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BubbleTransition.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IHProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LINEActivity.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PuzzleMaker.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SAConfettiView.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MemoryPuzzle/Pods-MemoryPuzzle-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B202882C22243A5700F26C04 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B216C0E62225A07800CC22E1 /* CustomPresentationController.swift in Sources */,
+				B216C0E82226808100CC22E1 /* 9ViewController.swift in Sources */,
+				B202886A222511A900F26C04 /* ViewController3.swift in Sources */,
+				B202886C22251CC800F26C04 /* ViewController4.swift in Sources */,
 				B202883622243A5700F26C04 /* ViewController.swift in Sources */,
+				B20288672224448500F26C04 /* ViewController2.swift in Sources */,
 				B202883422243A5700F26C04 /* AppDelegate.swift in Sources */,
 				B202883C22243A5700F26C04 /* MemoryPuzzle.xcdatamodeld in Sources */,
+				B21F1A67222E4E4F00BA315A /* CustomButton.swift in Sources */,
+				B216C0E42225A01C00CC22E1 /* ModalViewController.swift in Sources */,
+				B216C0EA2226809100CC22E1 /* 25ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +649,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				B202885722243A5D00F26C04 /* MemoryPuzzleUITests.swift in Sources */,
+				B216C148222A6EE300CC22E1 /* BottomPopupDismissInteractionController.swift in Sources */,
+				B216C14D222A6EE300CC22E1 /* BottomPopupPresentationController.swift in Sources */,
+				B216C146222A6EE300CC22E1 /* BottomPopupUtils.swift in Sources */,
+				B216C14C222A6EE300CC22E1 /* BottomPopupTransitionHandler.swift in Sources */,
+				B216C147222A6EE300CC22E1 /* BottomPopupViewController.swift in Sources */,
+				B216C14B222A6EE300CC22E1 /* BottomPopupPresentAnimator.swift in Sources */,
+				B216C14A222A6EE300CC22E1 /* BottomPopupDismissAnimator.swift in Sources */,
+				B216C149222A6EE300CC22E1 /* BottomPopupNavigationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,9 +813,11 @@
 		};
 		B202885C22243A5D00F26C04 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4DFF2ACE7E5F15AC7FFC96A /* Pods-MemoryPuzzle.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GL86Y89DY4;
 				INFOPLIST_FILE = MemoryPuzzle/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -445,15 +826,17 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.geeksalon.MemoryPuzzle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		B202885D22243A5D00F26C04 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1BEE2965240FD0EFE146B71 /* Pods-MemoryPuzzle.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GL86Y89DY4;
 				INFOPLIST_FILE = MemoryPuzzle/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -462,12 +845,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.geeksalon.MemoryPuzzle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		B202885F22243A5D00F26C04 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01335492CE1842CAE520BF24 /* Pods-MemoryPuzzleTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -488,6 +872,7 @@
 		};
 		B202886022243A5D00F26C04 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CD51ACA255C25CF9A6C3D50 /* Pods-MemoryPuzzleTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +893,7 @@
 		};
 		B202886222243A5D00F26C04 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98B43DAE748D6ACF5332B05F /* Pods-MemoryPuzzleUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -527,6 +913,7 @@
 		};
 		B202886322243A5D00F26C04 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE0CC3FF5449D63868774D01 /* Pods-MemoryPuzzleUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

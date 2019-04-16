@@ -1,0 +1,40 @@
+PODS:
+  - AMColorPicker (1.0)
+  - BottomPopup (0.4.1)
+  - BubbleTransition (3.0.2)
+  - IHProgressHUD (0.1.4)
+  - LINEActivity (0.2.0)
+  - PuzzleMaker (1.1.0)
+  - SAConfettiView (0.1.8)
+
+DEPENDENCIES:
+  - AMColorPicker
+  - BottomPopup
+  - BubbleTransition (~> 3.0.0)
+  - IHProgressHUD
+  - LINEActivity (~> 0.2.0)
+  - PuzzleMaker
+  - SAConfettiView
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AMColorPicker
+    - BottomPopup
+    - BubbleTransition
+    - IHProgressHUD
+    - LINEActivity
+    - PuzzleMaker
+    - SAConfettiView
+
+SPEC CHECKSUMS:
+  AMColorPicker: a6e3682dcb409244d4f080f9dc71abbb46047bfc
+  BottomPopup: 052f0ea8bb1110d633e66529cbb07b8599eb227d
+  BubbleTransition: 6bdf7d8af460b5c3696beb0adbf4bcb17176ee11
+  IHProgressHUD: a01846bfbb581c761c79747c67b08387c3bdfae3
+  LINEActivity: 3cf844b075bc7f8338ea86b41bd46acd5ec934d8
+  PuzzleMaker: 2bbae2e0e9c36512707622fec23212c5e99a305a
+  SAConfettiView: c87031a2280659261b730fce3669fb10e73636ee
+
+PODFILE CHECKSUM: 4f921a803c8c04f89e5b3ba8523b40d19bf05506
+
+COCOAPODS: 1.5.3

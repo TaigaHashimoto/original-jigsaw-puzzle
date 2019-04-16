@@ -12,6 +12,15 @@ import CoreData
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    var selectedImage: UIImage?
+    
+    var selectedColor: UIColor?
+    
+    var currentValue: String?
+  
+    var shareImage: UIImage?
+    
+
     var window: UIWindow?
 
 
